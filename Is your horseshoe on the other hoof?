@@ -1,0 +1,13 @@
+colors = input().split()
+buy = 0
+checked = []
+for i in colors:
+    times = colors.count(i)
+    if i not in checked:
+        if times != 1:
+            checked.append(i)
+            buy += times - 1
+
+print(buy)
+
+       
